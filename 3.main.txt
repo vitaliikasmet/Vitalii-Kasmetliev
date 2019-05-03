@@ -1,0 +1,22 @@
+#include <iostream>
+ 
+using namespace std;
+#include <vector>
+#include <cmath>
+#include <Body>
+#include <Mesh>
+int main()
+{
+	Mesh h;
+	Body a(0, 0, 0,0, 16);
+	Body c(1000, 1000, 0,0, 10);
+	Body l(1000, 0, 0,0, 10);
+	Body k(0, 1000, 0,0, 10);
+	h.add (a);
+	h.add(c);
+	h.add (l);
+	h.add(k);
+	h.delay(10);
+	h.show();
+	return 0;
+}
